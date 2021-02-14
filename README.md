@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this analysis, we take a look at various MechaCar data and perform statistical analysis based on the data sets we have. First, we perform a linear regression analysis to find out if there is likely a relationship between vehicle specifications and miles per gallon. In the next two sections, we take a look a the reported suspension coils data to determine if there are issues there. Lastly, we propose a future study to conduct to compare our MechaCars against our competition.
+In this analysis, we take a look at various MechaCar data and perform statistical analysis based on the datasets we have. First, we perform a linear regression analysis to find out if there is likely a relationship between vehicle specifications and miles per gallon. In the next two sections, we take a look a the reported suspension coils data to determine if there are issues there. Lastly, we propose a future study to conduct to compare our MechaCars against our competition.
 
 ## Linear Regression to Predict
 
@@ -12,11 +12,11 @@ Based on the results, we found that it is statistically unlikely that vehicle le
 
 Furthermore, we find that mpg shows a positive relationship i.e. there is a non-zero positive slope with those aforementioned variables as we see a r-squared value of 0.7149, indicating a moderate fitted line against our data points.
 
-<img src="Resources/mechacar-regression.png">
+<img src="Resources/mechacar_regression.png">
 
 ## Summary Statistics on Suspension Coils
 
-Using the suspension coils data set, we were able to product summary statistics to review whether the MechaCar suspension coils meet specifications, where the PSI variance cannot exceed 100 PSI.
+Using the suspension coils dataset, we were able to product summary statistics to review whether the MechaCar suspension coils meet specifications, where the PSI variance cannot exceed 100 PSI.
 
 When we look at the total summary table below, we see the total variance for the MechaCars are at 62.3 PSI, which seems to indicate that production is meeting specifications.
 
@@ -30,7 +30,7 @@ However, when we dig deeper into the data to split between production batches i.
 
 Referring to our previous analysis, we've found that there may be an issue with lot#3 but need to test if there is a statistical significance to our findings i.e. whether lot#3 was caused by random chance or something else; this can be accomplished by using a t-test on the calculated means of our various findings against our population mean of 1,500 PSI.
 
-When we compare our sample data set against our population mean, we find that there is no statistical significance that something is out of the ordinary with our reported PSI (similar to our findings above) as the p-value of 0.06 is greater than 0.05 (shown in table below).
+When we compare our sample dataset against our population mean, we find that there is no statistical significance that something is out of the ordinary with our reported PSI (similar to our findings above) as the p-value of 0.06 is greater than 0.05 (shown in table below).
 
 <img src="Resources/ttest_totalsum.png">
 
@@ -42,3 +42,4 @@ For lot#3 however, the t-test shows that there is likely something else not rela
 
 ## Study Design: MechaCar vs Competition
 
+One of the things customers are interested in when buying cars is the fuel efficiency of those vehicles i.e. mpg. We should therefore conduct a study to determine whether there is a difference between mpg of our MechaCars and other cars. What we would do in this study is conduct a paired two-sample t-test to compare the mean mpg of MechaCars against the mean mpg of our competitors, where the null hypothesis determines that there is no difference between the mean mpg values. In terms of data, we can use our current MechaCar MPG dataset against vehicles of our competitors and their mpg with similar vehichle length, vehicle weight, spoiler angle, ground clearance and AWD specifications as those in our own dataset. 
